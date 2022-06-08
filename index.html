@@ -5,19 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Приложение</title>
+    <script defer>
+        window.onload = function(){
+            const img = document.getElementById('scrnsht')
+            img.src = 'https://drive.google.com/uc?export=download&id=1AxlIx_S4yaDZTpSVn1vpUrZCQxUwTiqA'
+            img.onload = function(){
+                console.log('загрузилось')
+            }
+        }
+    </script>
 </head>
 <body>
     <style>
+        @font-face { font-family: 'Inter'; font-display: swap; src: url('https://ryhux.xyz/files/fonts/Inter.ttf') format('truetype');}
         body,html{
           margin: 0;
-          padding: 0;  
+          padding: 0;
+        }
+        body{
+            padding: 0 8px;
+        }
+        h1{
+            font-variation-settings: 'wght' 600;
+        }
+        p{
+            font-size: 18px;
+        }
+        html{
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-variation-settings: 'wght' 450;
+            background: linear-gradient(90deg, rgba(255,133,93,1) 2%, rgba(255,60,60,1) 42%, rgba(255,145,0,1) 100%);
         }
         *{
             box-sizing: border-box;
         }
+        .download{
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 8px;
+            margin-top: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            background: rgb(245,146,17);
+            
+        }
+        .screenshot{
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+            filter: blur(2px);
+            border-radius: 10px;
+            background: rgb(202, 202, 202,0.5);
+        }
+        .infoVersion{
+            margin-top: 10px;
+            background: rgb(202, 202, 202,0.5);
+            border-radius: 10px;
+            padding: 8px;
+        }
+        .infoTitle{
+            margin-top: 8px;
+            font-variation-settings: 'wght' 500;
+        }
+        .authors{
+            opacity: 0.8;
+        }
+        .authors a{
+            color: white;
+            text-decoration: none;
+        }
     </style>
     <div>
         <h1>Music Remix</h1>
+        <p>Скачать приложение</p>
+        <img id="scrnsht" height="270" class="screenshot">
+        <a class="download" href="здесь писать ссылку">Скачать</a>
+        <div class="infoVersion">
+            <div>Версия: 2.0</div>
+            <div class="infoTitle">Изменения:</div>
+            <ul>
+                <li>писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!</li>
+                <li>писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!писать здесь!</li>
+            </ul>
+        </div>
+        <div class="authors">by <a href="https://ryhux.xyz">ryhux</a> & <a href="https://vk.com/music_re_mix">MusicRemix</a></div>
     </div>
+
 </body>
 </html>
