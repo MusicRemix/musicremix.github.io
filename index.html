@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -37,6 +36,9 @@
         }
         body{
             padding: 0 8px;
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
         }
         h1{
             font-variation-settings: 'wght' 600;
@@ -98,6 +100,21 @@ background: linear-gradient(90deg, rgba(255,177,68,1) 0%, rgba(252,79,255,1) 50%
             position: relative;
             display: flex;
         }
+        .titleText{
+            position: relative;
+        }
+        .titleText::after{
+            content: '';
+            display: block;
+            top: -24px;
+            position: absolute;
+            height: 120px;
+            width: 100%;
+            height: 100px;
+            background-image: url('https://drive.google.com/uc?export=download&id=19fXZ7ZLewexOidKQ4yAtgvTA8FpPjCCY');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         .icon{
             position: absolute;
             right: 0;
@@ -109,7 +126,7 @@ background: linear-gradient(90deg, rgba(255,177,68,1) 0%, rgba(252,79,255,1) 50%
     </style>
     <div>
         <div class="title">
-            <h1>Music Rmx</h1>
+            <h1 class="titleText">Music Rmx</h1>
             <div class="icon">
                 <svg width="60" height="31" viewBox="0 0 66 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M48.0205 27.3018C46.532 27.3018 45.3211 26.09 45.3211 24.6015C45.3211 23.113 46.532 21.9022 48.0205 21.9022C49.5093 21.9022 50.7201 23.1128 50.7201 24.6015C50.7201 26.09 49.5093 27.3018 48.0205 27.3018ZM18.1823 27.3018C16.6938 27.3018 15.483 26.09 15.483 24.6015C15.483 23.113 16.6935 21.9022 18.1823 21.9022C19.6708 21.9022 20.8817 23.1128 20.8817 24.6015C20.8817 26.09 19.6711 27.3018 18.1823 27.3018ZM48.9887 11.0409L54.384 1.69686C54.5325 1.43899 54.5726 1.13274 54.4956 0.845301C54.4186 0.557864 54.2307 0.312721 53.9731 0.16366C53.7152 0.0152179 53.409 -0.0248926 53.1216 0.0521257C52.8341 0.129144 52.589 0.317003 52.4399 0.574506L46.9772 10.0366C42.7994 8.13034 38.1078 7.06826 33.1014 7.06826C28.095 7.06826 23.4034 8.13034 19.2259 10.0366L13.7629 0.574506C13.6138 0.317003 13.3687 0.129144 13.0812 0.0521257C12.7938 -0.0248926 12.4876 0.0152179 12.2297 0.16366C11.972 0.312581 11.7839 0.557727 11.7069 0.845222C11.6299 1.13272 11.6701 1.43904 11.8188 1.69686L17.2141 11.0409C7.94966 16.0795 1.61336 25.4583 0.686401 36.5388H65.5164C64.5887 25.4586 58.2524 16.0795 48.9887 11.0406" fill="#ffffff"/>
@@ -118,7 +135,7 @@ background: linear-gradient(90deg, rgba(255,177,68,1) 0%, rgba(252,79,255,1) 50%
         </div>
         <p>Скачать приложение</p>
         <img id="scrnsht" height="270" class="screenshot" src="https://drive.google.com/uc?export=download&id=182ZU95B4zuwONwJKKzPT6Mc9bUAYneQ3">
-        <a class="download"href="https://www.dropbox.com/s/mruzyzurae18l26/MusicRmx.apk?dl=1">Скачать</a>
+        <a class="download" href="https://www.dropbox.com/s/mruzyzurae18l26/MusicRmx.apk?dl=1">Скачать</a>
         <div class="infoVersion">
             <div>Версия: 3.8.0 Stable</div>
             <div class="infoTitle">Изменения:</div>
